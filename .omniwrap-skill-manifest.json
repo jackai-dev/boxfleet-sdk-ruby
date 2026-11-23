@@ -1,0 +1,14 @@
+{
+  "agent_protocols_supported": [
+    "mcp-code-mode",
+    "a2a-1.0",
+    "ag-ui",
+    "mcp-tasks"
+  ],
+  "client_name": "BoxFleetHostedControlPlaneBoxfleetIoClient",
+  "language": "ruby",
+  "operation_count": 56,
+  "package_name": "box_fleet_hosted_control_plane_boxfleet_io",
+  "schema": "omniwrap.embedded-skill-manifest/v1",
+  "sha256": "83b6b2e9e4e3f7f76b58b3d184719395b52aa06f1acd2389d1ff370d343a3a4d"
+}

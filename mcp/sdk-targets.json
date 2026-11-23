@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "box_fleet_hosted_control_plane_boxfleet_io@0.3.0",
+        "ecosystem": "RubyGems",
+        "entry": "OmniWrap::Client",
+        "import": "require \"box_fleet_hosted_control_plane_boxfleet_io\""
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "cancel_job",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs",
+          "signature": "def cancel_job(job_id:)"
+        },
+        "closeHostedWorkspace": {
+          "member": "close_hosted_workspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces",
+          "signature": "def close_hosted_workspace(workspace_id:)"
+        },
+        "closePersistentBox": {
+          "member": "close_persistent_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations",
+          "signature": "def close_persistent_box(organization_id:, box_id:)"
+        },
+        "controlUser": {
+          "member": "control_user",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "def control_user(body: nil)"
+        },
+        "createBillingPortal": {
+          "member": "create_billing_portal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations",
+          "signature": "def create_billing_portal(organization_id:)"
+        },
+        "createBox": {
+          "member": "create_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "def create_box(organization_id:, body: nil)"
+        },
+        "createCheckout": {
+          "member": "create_checkout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations",
+          "signature": "def create_checkout(organization_id:, body: nil)"
+        },
+        "getAccountsConfig": {
+          "member": "get_accounts_config",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts",
+          "signature": "def get_accounts_config()"
+        },
+        "getAdminConsole": {
+          "member": "get_admin_console",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin",
+          "signature": "def get_admin_console()"
+        },
+        "getAdminPlans": {
+          "member": "get_admin_plans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "def get_admin_plans()"
+        },
+        "getAuthGate": {
+          "member": "get_auth_gate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "def get_auth_gate()"
+        },
+        "getBilling": {
+          "member": "get_billing",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations",
+          "signature": "def get_billing(organization_id:)"
+        },
+        "getBox": {
+          "member": "get_box",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "def get_box(organization_id:, box_id:)"
+        },
+        "getEntitlements": {
+          "member": "get_entitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations",
+          "signature": "def get_entitlements(organization_id:)"
+        },
+        "getFleet": {
+          "member": "get_fleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations",
+          "signature": "def get_fleet(organization_id:)"
+        },
+        "getFleetPolicy": {
+          "member": "get_fleet_policy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "def get_fleet_policy(organization_id:)"
+        },
+        "getHealth": {
+          "member": "get_health",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "def get_health()"
+        },
+        "getHostedWorkspace": {
+          "member": "get_hosted_workspace",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces",
+          "signature": "def get_hosted_workspace(workspace_id:)"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "get_hosted_workspace_operation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces",
+          "signature": "def get_hosted_workspace_operation(workspace_id:, operation_id:)"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "get_hosted_workspace_source",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces",
+          "signature": "def get_hosted_workspace_source(workspace_id:)"
+        },
+        "getJob": {
+          "member": "get_job",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs",
+          "signature": "def get_job(job_id:)"
+        },
+        "getPersistentBox": {
+          "member": "get_persistent_box",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "def get_persistent_box(organization_id:, box_id:)"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "get_persistent_box_provider_usage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations",
+          "signature": "def get_persistent_box_provider_usage(organization_id:, box_id:, query: {})"
+        },
+        "getPlans": {
+          "member": "get_plans",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans",
+          "signature": "def get_plans()"
+        },
+        "ingestTelemetry": {
+          "member": "ingest_telemetry",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry",
+          "signature": "def ingest_telemetry(body: nil)"
+        },
+        "listBoxes": {
+          "member": "list_boxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "def list_boxes(organization_id:)"
+        },
+        "listHostedWorkspaces": {
+          "member": "list_hosted_workspaces",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "def list_hosted_workspaces()"
+        },
+        "listInvoices": {
+          "member": "list_invoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations",
+          "signature": "def list_invoices(organization_id:)"
+        },
+        "listJobEvents": {
+          "member": "list_job_events",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs",
+          "signature": "def list_job_events(job_id:)"
+        },
+        "listJobs": {
+          "member": "list_jobs",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "def list_jobs()"
+        },
+        "listMembers": {
+          "member": "list_members",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "def list_members(organization_id:)"
+        },
+        "listObservedBoxes": {
+          "member": "list_observed_boxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations",
+          "signature": "def list_observed_boxes(organization_id:)"
+        },
+        "listPersistentBoxOffers": {
+          "member": "list_persistent_box_offers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations",
+          "signature": "def list_persistent_box_offers(organization_id:)"
+        },
+        "listPersistentBoxes": {
+          "member": "list_persistent_boxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "def list_persistent_boxes(organization_id:, query: {})"
+        },
+        "listUsers": {
+          "member": "list_users",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "def list_users()"
+        },
+        "listWaitlist": {
+          "member": "list_waitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "def list_waitlist()"
+        },
+        "openHostedWorkspace": {
+          "member": "open_hosted_workspace",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "def open_hosted_workspace(body: nil)"
+        },
+        "provisionPersistentBox": {
+          "member": "provision_persistent_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "def provision_persistent_box(organization_id:, body: nil)"
+        },
+        "putFleetPolicy": {
+          "member": "put_fleet_policy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "def put_fleet_policy(organization_id:, body: nil)"
+        },
+        "readTelemetry": {
+          "member": "read_telemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin",
+          "signature": "def read_telemetry()"
+        },
+        "reconcilePersistentBox": {
+          "member": "reconcile_persistent_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations",
+          "signature": "def reconcile_persistent_box(organization_id:, box_id:, body: nil)"
+        },
+        "recoverHostedWorkspace": {
+          "member": "recover_hosted_workspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces",
+          "signature": "def recover_hosted_workspace(workspace_id:, body: nil)"
+        },
+        "register": {
+          "member": "register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth",
+          "signature": "def register(body: nil)"
+        },
+        "removeMember": {
+          "member": "remove_member",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations",
+          "signature": "def remove_member(organization_id:, user_id:)"
+        },
+        "requestAccess": {
+          "member": "request_access",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "def request_access(body: nil)"
+        },
+        "runHostedWorkspace": {
+          "member": "run_hosted_workspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces",
+          "signature": "def run_hosted_workspace(workspace_id:, body: nil)"
+        },
+        "startPersistentBox": {
+          "member": "start_persistent_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations",
+          "signature": "def start_persistent_box(organization_id:, box_id:, body: nil)"
+        },
+        "stopBox": {
+          "member": "stop_box",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "def stop_box(organization_id:, box_id:)"
+        },
+        "stopPersistentBox": {
+          "member": "stop_persistent_box",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations",
+          "signature": "def stop_persistent_box(organization_id:, box_id:, body: nil)"
+        },
+        "stripeWebhook": {
+          "member": "stripe_webhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing",
+          "signature": "def stripe_webhook()"
+        },
+        "submitJob": {
+          "member": "submit_job",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "def submit_job(body: nil)"
+        },
+        "syncObservedBoxes": {
+          "member": "sync_observed_boxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations",
+          "signature": "def sync_observed_boxes(organization_id:, body: nil)"
+        },
+        "updateAuthGate": {
+          "member": "update_auth_gate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "def update_auth_gate(body: nil)"
+        },
+        "updatePlan": {
+          "member": "update_plan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "def update_plan(body: nil)"
+        },
+        "upsertMember": {
+          "member": "upsert_member",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "def upsert_member(organization_id:, body: nil)"
+        },
+        "verifyLicense": {
+          "member": "verify_license",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth",
+          "signature": "def verify_license(body: nil)"
+        }
+      },
+      "package_directory": "../box-fleet-hosted-control-plane-boxfleet-io-ruby-sdk",
+      "package_manifest": "omniwrap_client.gemspec",
+      "reference": "api.md",
+      "renderer": "ruby"
+    }
+  ]
+}

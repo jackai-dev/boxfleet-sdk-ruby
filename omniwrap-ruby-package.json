@@ -1,0 +1,61 @@
+{
+  "artifact_type": "ruby-sdk",
+  "package_manifest": "omniwrap_client.gemspec",
+  "package_name": "box_fleet_hosted_control_plane_boxfleet_io",
+  "package_version": "0.3.0",
+  "runtime_floor": ">= 3.2.0",
+  "source_files": [
+    {
+      "path": ".omniwrap-skill-manifest.json",
+      "sha256": "6e1f15858b4c9e1f302bc4258d9a410d3adb8abc8a66d8b711622c7a35e2948b",
+      "size_bytes": 411
+    },
+    {
+      "path": "agent-session.json",
+      "sha256": "308a7b39a3a7786cf9789dc6f535fa4fc32a8a9293c5f88e975c8e21757a0464",
+      "size_bytes": 230240
+    },
+    {
+      "path": "AGENT_SESSION.md",
+      "sha256": "16d8c2a0647d592bd72230c6923f47e6bf3bcba342d8d30bbc5abda8b7044f02",
+      "size_bytes": 702
+    },
+    {
+      "path": "api.md",
+      "sha256": "aee56fd12bbcd0e848aec35395ad51c1b6c117c5e384723e7430a786a6bef097",
+      "size_bytes": 92762
+    },
+    {
+      "path": "lib/agent_session.rb",
+      "sha256": "60250865f22de5e5c9e449482d84754e4c8596e6f17c4e4fcd34084e1b16a4f5",
+      "size_bytes": 1286
+    },
+    {
+      "path": "lib/client.rb",
+      "sha256": "b06ace58145e154058a19f9f83da370b93e0f34918343651757cbce9ef0406aa",
+      "size_bytes": 17857
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+      "size_bytes": 282
+    },
+    {
+      "path": "omniwrap_client.gemspec",
+      "sha256": "268fc23cd78813554195d285602af03041f687a7658970519f44d86ce9affe5b",
+      "size_bytes": 563
+    },
+    {
+      "path": "README.md",
+      "sha256": "e2d2330041635e21d1bc34578432562c7927896fa59080fd0514149d5ad678c2",
+      "size_bytes": 849
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "83b6b2e9e4e3f7f76b58b3d184719395b52aa06f1acd2389d1ff370d343a3a4d",
+      "size_bytes": 25182
+    }
+  ],
+  "source_version": "0.3.0",
+  "target": "ruby"
+}
